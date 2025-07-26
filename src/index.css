@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background-color:rgb(157, 206, 239);
+  width: 100vw;
+  min-height: 70px;
+  box-shadow: 0 2px 8px rgba(11, 41, 15, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto; 
+}
+
+
+.icon {
+  height: 50px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0;
+}
+
+
+.nav .tx, .nav a.tx {
+  font-size: 20px;
+  font-weight: 500;
+  color: #051e00;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav .tx:hover, .nav a.tx:hover {
+  color: #fff;
+  background-color:rgb(157, 206, 239);
+  text-decoration: underline #fff;
+}
+
+
+.nav > *:last-child {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.sr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color:rgb(136, 191, 234);
+  padding: 18px 24px;
+  margin: 32px auto 24px auto;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0 1px 6px rgba(205, 33, 33, 0.06);
+}
+
+
+.bx {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #5ef3f3;
+  width: 260px;
+  font-size: 16px;
+}
+
+
+.se {
+  padding: 8px 18px;
+  border-radius: 5px;
+  border: 1px solid #0c1a20;
+  background-color: #97d5ed;
+  color: #0c1212;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'sans-serif';
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+}
+.se:hover {
+  background-color:#72bad7;
+  color: #d01919;
+}
+
+/* Restaurant Grid */
+.bo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  padding: 32px 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-shadow: inset 0 0 10px rgba(14, 196, 63, 0.12);
+  background: #16a7e6;
+  border-radius: 12px;
+}
+
+/* Restaurant Card */
+.bo > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ade1f6;
+  padding: 18px 10px 16px 10px;
+  border-radius: 10px;
+
+  transition: transform 0.15s;
+}
+.bo > div:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(11, 232, 70, 0.16);
+}
+
+/* Restaurant Image */
+.im {
+  height: 160px;
+  width: 100%;
+  max-width: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
